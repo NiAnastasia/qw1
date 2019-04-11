@@ -1,0 +1,241 @@
+@import "~bootstrap/scss/bootstrap";
+
+.col-md-1 {
+  background-color: #afa;
+
+  &:nth-child(2n) {
+    background-color: #faa;
+  }
+}
+
+.carousel {
+  height: 100%;
+
+  .carousel-caption {
+    padding-bottom: 2em;
+
+    &__title {
+      font-size: 4em;
+    }
+
+    &__description {
+      font-size: 2em;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.about-page-section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 14.2em;
+  color: #fff;
+  margin-bottom: 3em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  &--biography {
+    background-image: url('../img/SliderImage3.jpg');
+  }
+
+  &--poems {
+    background-image: url('../img/SliderImage4.jpg');
+  }
+
+  &--list {
+    background-image: url('../img/SliderImage2.jpg');
+    padding: 12.1em;
+    margin-bottom: 1.5em;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    font-weight: normal;
+    font-size: 3.5rem;
+  }
+
+  &__button {
+
+  }
+}
+
+.container {
+  font-family: Courier New;
+  text-indent: 2em;
+  text-align: justify;
+
+  .img_l {
+    float: left;
+    margin: 0.5em 1em 0 0;
+  }
+  .row {
+    font-size: 1.5em;
+    font-style: italic;
+  }
+  .img_r {
+    float: right;
+    margin: 0.5em 0 0 1em;
+  }
+  .img_b {
+    height: 40vh;
+    width: 30vw;
+  }
+  .img_m {
+    height: 75vh;
+    width: 25vw;
+  }
+
+  .img_v {
+    height: 45vh;
+    width: 30vw;
+  }
+
+}
+
+.header {
+  background-color: rgba(0, 8, 37, 0.86);
+  color: white;
+
+  a {
+    color: white;
+  }
+}
+
+.footer {
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  width: 100%;
+}
+
+.italic {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.fullpage-slide {
+
+  &__image {
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__title {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: #FFF;
+    font-size: 4rem;
+  }
+}
+
+.column {
+  padding-bottom: 20px; /*отступ снизу*/
+  width: 100%; /*указываем общую ширину блока с колонками*/
+  text-align: left; /*выравнивание текста внутри колонок*/
+  column-count: 3; /*количество колонок, на которое хотим разбить текст*/
+  -moz-column-count: 3; /*для мозилы*/
+  -webkit-column-count: 3; /*для webkit браузеров*/
+  column-gap: 9em; /*отступ между колонками*/
+  -moz-column-gap: 9em;
+  -webkit-column-gap: 12em;
+  column-rule: 1px solid #FFFFFF; /*если требуется по дизайну, разделяем колонки линией*/
+  -moz-column-rule: 1px none #FFFFFF;
+  -webkit-column-rule: 1px none #FFFFFF;
+  font-size: 0.7em;
+  text-indent: 0;
+}
+
+.poem {
+  font-size: 1em;
+  text-indent: 0;
+}
+
+.subscriptions {
+
+}
+
+//.form-control {
+//  margin: 15em 6em 2em 0;
+//  width: 50%;
+//}
+//
+//.subscript {
+  //background-image: url("../img/219396779.jpg");
+  //height: 50vh;
+  //width: 50vw;
+  //background-position: center;
+  //background-repeat: no-repeat;
+  //background-size: cover;
+  //margin-left: 40%;
+  //margin-right: 40%;
+//}
+//
+//.social_networks {
+//  height: 6em;
+//  width: 6em;
+//}
+
+.sb {
+  background: url("../img/Venice3.JPG") no-repeat center;
+  background-size: cover;
+}
+
+.subscriptions {
+  text-indent: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  &__title {
+    color: white;
+  }
+
+  &__input {
+    margin-right: 10px;
+  }
+
+
+  &__container {
+
+    width: 50%;
+
+    margin-top: 25px;
+
+    &:last-child {
+      text-align: center;
+    }
+
+    &--subscriptions {
+      display: flex;
+    }
+
+
+    &--social-links {
+
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__social_link {
+    padding: 0 10px;
+    text-align: center;
+
+    img {
+      width: 50px;
+      display: block;
+      margin: 0 auto;
+    }
+
+  }
+}
